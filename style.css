@@ -1,0 +1,596 @@
+@font-face {
+    font-family: 'Gotham Pro';
+    src: local('Gotham Pro'),
+    		url(fonts/GothamPro.ttf); 
+}
+@font-face {
+    font-family: 'Gotham Pro Bold';
+    src: local('Gotham Pro'),
+    		url(fonts/GothamPro-Bold.ttf); 
+}
+@font-face {
+    font-family: 'PF Encore Sans Pro Bold';
+    src: local('PF Encore Sans Pro'),
+    		url(fonts/PFEncoreSansPro-Bold.ttf); 
+}
+@font-face {
+    font-family: 'PF Encore Sans Pro Thin';
+    src: local('PF Encore Sans Pro'),
+    		url(fonts/PFEncoreSansPro-Thin.ttf); 
+}
+@font-face {
+    font-family: 'PF Encore Sans Pro Light';
+    src: local('PF Encore Sans Pro'),
+    		url(fonts/PFEncoreSansPro-Light.ttf); 
+}
+@font-face {
+    font-family: 'PF Encore Sans Pro Medium';
+    src: local('PF Encore Sans Pro'),
+    		url(fonts/PFEncoreSansPro-Medium.ttf); 
+}
+
+
+
+body {
+    margin: 0;
+    background-color: #fc645f;
+}
+
+
+
+#theme-color {
+	color: #fc645f;
+}
+#grey-color {
+	color: #868686;
+}
+
+
+/* HEADER */
+header {
+	width: 1260px;
+	height: 765px;
+	display: block;
+    margin: 0 auto;
+}
+
+
+
+.main-name{
+	z-index: 1;
+	position: absolute;
+	font-family: 'Gotham Pro Bold'; color: white; font-size: 24.08px;
+	padding-top: 43px; padding-left: 235px;
+}
+
+
+
+.hex {
+	margin-left: 160px; margin-top: 22px;
+	z-index: 1;
+	width: 59px; height: 69px;
+	position: absolute;
+	display: flex; justify-content: center; align-items: center;
+	font-family: 'Gotham Pro Bold'; color: black; font-size: 35.7px; text-align: center;
+}
+.hex-1{
+	width: 59px; height: 34px;
+	background-color: #fc645f;
+	position: absolute;
+}
+.hex-2{
+	transform: rotate(60deg);
+	width: 59px; height: 34px;
+	background-color: #fc645f;
+	position: absolute;
+}
+.hex-3{
+	transform: rotate(120deg);
+	width: 59px; height: 34px;
+	background-color: #fc645f;
+	position: absolute;
+}
+.sign{
+	position: absolute;
+	font-family: 'Gotham Pro Bold'; color: black; font-size: 35.7px; text-align: center;
+}
+
+
+
+.menu-list {
+	z-index: 1;
+	margin-left: 680px; margin-top: 43px;
+	position: absolute; display: flex; justify-content: center; align-items: center;
+	width: 420px; height: 27px;
+}
+.list-font {
+	font-family: 'PF Encore Sans Pro Thin'; font-size: 16px; color: white; letter-spacing: 0.35px;
+}
+.menu-list span + span {
+	margin-left: 50px;
+}
+.underline {
+	position: absolute;
+	width: 83px; height: 4px;
+	background-color: #fc645f;
+	z-index: 1;
+	margin-top: 6%; margin-right: 45%;
+}
+
+
+
+.button-main {
+	z-index: 1;
+	position: absolute;
+	margin-left: 528px; margin-top: 412px;
+	width: 202px; height: 54px;
+	border: 2px solid; border-color: #fc645f; border-radius: 7px;
+	display: flex; justify-content: center; align-items: center;
+}
+.button-main-text {
+	font-family: 'PF Encore Sans Pro Thin'; font-size: 24.01px; color: #fc645f; /*letter-spacing: 0.35px;*/
+}
+.button-main::after {
+	content: url('img/header/mouseicon.png');
+	z-index: 1;
+	position: absolute;
+	top: 22%;
+	left: 105%;
+	color: white; /*хуйня, не работает*/
+}
+.button-main::before {
+	content: url('img/header/dotted-line.png');
+	z-index: 1;
+	position: absolute;
+	left: 128%;
+	top: 50%;
+	color: white; /*хуйня, не работает*/
+	background-size: 47px 32px;
+}
+
+
+
+
+.main-info{
+	width: 1260px;
+	z-index: 1;
+	position: absolute;
+	display: flex; justify-content: center; align-items: center;
+	margin-top: 270px;
+}
+.main-text {
+	position: relative;
+	font-family: 'PF Encore Sans Pro Bold'; font-size: 51px; color: white;
+}
+.main-line {
+	position: relative;
+	width: 103px;
+	height: 8px;
+	background-color: white;
+	opacity: 0.20;
+	margin: 10px;
+}
+.main-text-small {
+	position: absolute;
+	font-family: 'PF Encore Sans Pro Light'; font-size: 24.01px; color: white;
+	margin-top: 105px;
+}
+
+
+
+/* ARTICLE 1 */
+.artc1 {
+	width: 1260px;
+	height: 575px;
+	display: flex;
+	justify-content: center; align-content: center;
+    margin: 0 auto;
+    background-color: white;
+}
+.contxt {
+	margin-top: 50px;
+	position: absolute;
+	width: 1260px;
+	display: flex; justify-content: center; align-items: center; flex-direction: column;
+}
+.contxt-txt {
+	position: relative;
+	font-family: 'PF Encore Sans Pro Medium'; font-size: 28.01px; color: #868686;
+}
+.artc1-contxt-ln {
+	width: 337px;
+	height: 1px;
+	background-color: #868686;
+	margin-top: 5px;
+}
+.contxt-txtmin {
+	position: relative;
+	font-family: 'PF Encore Sans Pro Light'; font-size: 20px; color: #868686;
+	margin-top: 20px;
+	text-align: center;
+}
+.elements-hexagons-first-article{
+	margin-top: 250px;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	justify-content: space-around;
+	width: 940px;
+	height: 104px;
+}
+.hexagon-container{
+	display: flex; 
+	justify-content: center; 
+	align-items: center; 
+	flex-direction: column;
+}
+.hexagon-container-text-one {
+	position: absolute;
+	margin-top: 178px;
+	font-family: 'PF Encore Sans Pro Medium'; font-size: 20px; color: #868686;
+}
+.hexagon-container-underline {
+	position: absolute;
+	width: 58px; height: 1px;
+	background-color: #868686;
+	margin-top: 212px;
+}
+.hexagon-container-text-two {
+	position: absolute;
+	margin-top: 304px;
+	font-family: 'PF Encore Sans Pro Light'; font-size: 15px; color: #868686;
+	text-align: center;
+}
+
+
+
+/* ARTICLE 2 */
+.artc2 {
+	width: 1260px;
+	height: 576px;
+	display: flex; justify-content: center; align-items: center; flex-direction: column;
+    margin: 0 auto;
+    background-color: black;
+}
+.box-second-article {
+	position: relative; display: flex; justify-content: center; align-items: center; flex-direction: column;
+	width: 932px; height: 376px;
+	border: 8px solid rgba(255, 255, 255, .20);
+	z-index: 1;
+}
+.text-box-second-article {
+	font-family: 'PF Encore Sans Pro Bold'; font-size: 50.86px; color: white;
+	position: relative;
+	opacity: 1;
+	margin-bottom: 36px;
+}
+.button-box-second-article{
+	z-index: 1;
+	position: relative;
+	width: 202px; height: 54px;
+	border: 2px solid; border-color: #fc645f; border-radius: 7px;
+	display: flex; justify-content: center; align-items: center;
+}
+.text-button-box-second-article{
+	font-family: 'PF Encore Sans Pro Thin'; font-size: 24.01px; color: #fc645f;
+}
+
+
+
+/* ARTICLE 3 */
+.artc3 {
+	width: 1260px;
+	height: 840px;
+	display: flex;
+    margin: 0 auto;
+    background-color: white;
+}
+.artc3-contxt-ln {
+	width: 190px;
+	height: 1px;
+	background-color: #868686;
+	margin-top: 5px;
+}
+.artc3-circle {
+	width: 38px; height: 38px;
+	background-color: #fc645f;
+	border-radius: 50%;
+	display: flex; align-items: center; justify-content: center;
+	position: absolute;
+}
+.artc3-hexcon {
+	display: flex; justify-content: center; position: absolute;
+	width: 212px;
+	height: 201px;
+}
+.artc3-hexcon-txtbig {
+	font-family: 'PF Encore Sans Pro Medium'; font-size: 24.01px; color: #868686;
+	position: absolute;
+	margin-top: 40px;
+}
+.artc3-hexcon-txtmin {
+	font-family: 'PF Encore Sans Pro Light'; font-size: 15.01px; color: #868686; line-height: 17px;
+	position: absolute;
+	margin-top: 85px;
+}
+.artc3-hexcon-line {
+	position: absolute;
+	width: 76px; height: 1px;
+	background-color: #868686;
+	margin-top: 70px;
+}
+.artc3-hexcon2 {
+	display: flex; justify-content: center; position: absolute;
+	margin-left: 415px;
+	margin-top: 453px;
+}
+.artc3-hexcon3 {
+	display: flex; justify-content: center; position: absolute;
+}
+.artc3-hexcon3-txtbig {
+	position: absolute;
+	font-family: 'PF Encore Sans Pro Medium'; font-size: 24.01px; color: #868686;
+	margin-top: 60px;
+}
+.artc3-hexcon3-txtmin {
+	position: absolute;
+	font-family: 'PF Encore Sans Pro Light'; font-size: 15.01px; color: #868686; line-height: 17px;
+	margin-top: 105px;
+}
+.artc3-hexcon3-line {
+	position: absolute;
+	width: 76px; height: 1px;
+	background-color: #868686;
+	margin-top: 90px;
+}
+
+
+/* ARTICLE 4 */
+.artc4 {
+	width: 1260px;
+	height: 576px;
+	display: flex;
+	margin: 0 auto;
+	background-color: #f2f2f2;
+}
+.artc4-contxt-ln {
+	width: 226px;
+	height: 1px;
+	background-color: #868686;
+	margin-top: 5px;
+}
+.artc4-ln{
+	width: 10px; height: 39px;
+	background-color: #fc645f;
+	position: absolute; margin-left: 160px; margin-top: 161px;
+	z-index: 1;
+}
+.artc4-txt{
+	font-family: 'PF Encore Sans Pro Medium'; font-size: 28.01px; color: #868686;
+	margin-left: 180px; margin-top: 165px;
+}
+.artc4-txtmin {
+	font-family: 'PF Encore Sans Pro Light'; font-size: 15.01px; color: #868686; line-height: 24px;
+	margin-left: 160px; margin-top: 220px; position: absolute;
+}
+.artc4-btn{
+	display: flex; align-items: center; justify-content: center;
+	position: absolute; margin-left: 160px; margin-top: 380px;
+	width: 167px; height: 44px; 
+	border-radius: 7px;
+	background-color: #fc645f;
+}
+.artc4-btn-txt{
+	font-family: 'PF Encore Sans Pro Light'; font-size: 20.01px; color: white;
+}
+
+
+
+
+/* ARTICLE 5 */
+.artc5 {
+	width: 1260px;
+	height: 576px;
+	display: flex;
+	margin: 0 auto;
+	background-color: white;
+}
+.artc5-ln {
+	width: 10px; height: 39px;
+	background-color: #fc645f;
+	position: absolute; margin-left: 1090px; margin-top: 161px;
+	z-index: 1;
+}
+.artc5-txt {
+	text-align: right;
+	font-family: 'PF Encore Sans Pro Medium'; font-size: 28.01px; color: #868686;
+	margin-left: 900px; margin-top: 165px;
+}
+.artc5-txtmin {
+	font-family: 'PF Encore Sans Pro Light'; font-size: 15.01px; color: #868686; line-height: 24px;
+	margin-left: 720px; margin-top: 220px; position: absolute;
+	text-align: right;
+}
+.artc5-btn{
+	display: flex; align-items: center; justify-content: center;
+	position: absolute; margin-left: 932px; margin-top: 380px;
+	width: 167px; height: 44px; 
+	border-radius: 7px;
+	background-color: #fc645f;
+}
+.artc5-btn-txt{
+	font-family: 'PF Encore Sans Pro Light'; font-size: 20.01px; color: white;
+}
+
+
+
+/* ARTICLE 6 */
+.artc6 {
+	width: 1260px;
+	height: 576px;
+	display: flex;
+	margin: 0 auto;
+	background-color: #f2f2f2;
+}
+
+
+
+/* ARTICLE 7 */
+.artc7 {
+	width: 1260px;
+	height: 840px;
+	display: flex;
+	margin: 0 auto; justify-content: center; flex-wrap: wrap;
+	background-color: white;
+}
+.artc7-contxt-ln {
+	width: 150px;
+	height: 1px;
+	background-color: #868686;
+	margin-top: 5px;
+}
+.artc7-btn{
+	display: flex; align-items: center; justify-content: center;
+	position: absolute; margin-top: 710px;
+	width: 192px; height: 51px; 
+	border-radius: 7px;
+	background-color: #fc645f;
+}
+.artc7-btn-txt{
+	font-family: 'PF Encore Sans Pro Light'; font-size: 20.01px; color: white;
+}
+.artc7-phbx1 {
+	position: absolute;
+	display: flex; justify-content: space-between;
+	width: 940px;
+	margin-top: 240px;
+}
+.artc7-phbx2 {
+	position: absolute;
+	display: flex; justify-content: space-between;
+	width: 940px;
+	margin-top: 450px;
+}
+.artc7-bx {
+	margin-top: 130px;
+	display: flex; flex-wrap: wrap; justify-content: center; align-content: center;
+	border-top: 1px solid #868686;
+	border-bottom: 1px solid #868686;
+	width: 940px;
+	height: 60px;
+}
+.artc7-txtbx {
+	width: 900px;
+	height: 40px;
+	display: flex; flex-wrap: wrap; justify-content: center; align-content: center;
+	justify-content: space-between;
+}
+.artc7-txtbx-txt{
+	font-family: 'PF Encore Sans Pro Light'; font-size: 20.01px; color: #fc645f;
+
+}
+
+
+/* ARTICLE 8 */
+.artc8 {
+	width: 1260px;
+	height: 576px;
+	display: flex; justify-content: center;
+	margin: 0 auto;
+	background-color: #f2f2f2;
+}
+.artc8-contxt-ln {
+	width: 140px;
+	height: 1px;
+	background-color: #868686;
+	margin-top: 5px;
+}
+.artc8-hexbox {
+	position: absolute; margin-top: 160px;
+	width: 940px;
+	display: flex; justify-content: space-around; align-content: center;
+}
+.artc8-hexbox-hex {
+	display: flex; justify-content: center; align-content: center; align-items: center;
+}
+.artc8-hexbox-hex-txtbig {
+	font-family: 'PF Encore Sans Pro Medium'; font-size: 28.02px; color: #fc645f;
+	position: absolute;
+	margin-top: 250px;
+}
+.artc8-hexbox-hex-txtmin {
+	font-family: 'PF Encore Sans Pro Light'; font-size: 20.02px; color: #868686;
+	position: absolute;
+	margin-top: 325px;
+}
+.artc8-hexbox-icons {
+	position: absolute;
+	width: 147px;
+	display: flex; justify-content: space-between; align-content: center; 
+	margin-top: 410px;
+}
+
+
+/* ARTICLE 9 */
+.artc9 {
+	width: 1260px;
+	height: 628px;
+	display: flex; justify-content: center;
+	margin: 0 auto;
+	background-color: white;
+}
+.artc9-hexbox {
+	display: flex; justify-content: center; align-items: center; position: absolute;
+}
+.artc9-hexbox-txtbig {
+	font-family: 'PF Encore Sans Pro Medium'; font-size: 26.94px; color: white;
+	position: absolute; z-index: 3;
+	margin-top: -70px;
+}
+.artc9-hexbox-txtmin {
+	font-family: 'PF Encore Sans Pro light'; font-size: 14.97px; color: white; line-height: 20.96px;
+	position: absolute; z-index: 3; 
+	margin-top: 40px;
+}
+.artc9-txtleft {
+	font-family: 'PF Encore Sans Pro light'; font-size: 15px; color: ; line-height: 21px;
+	position: absolute; margin-top: 250px; margin-left: -620px; 
+}
+.artc9-txtright-big {
+	font-family: 'PF Encore Sans Pro Medium'; font-size: 28.01px; color: #868686;
+	position: absolute; margin-top: 255px; margin-left: 470px; 
+}
+.artc9-txtright-min {
+	font-family: 'PF Encore Sans Pro Light'; font-size: 20px; color: #868686;
+	position: absolute; margin-top: 302px; margin-left: 445px; 
+}
+
+
+/* ARTICLE 10 */
+.artc10 {
+	width: 1260px;
+	height: 338px;
+	display: flex;
+	margin: 0 auto;
+}
+
+
+
+/* FOOTER */
+footer {
+	width: 1260px;
+	height: 211px;
+	display: flex; justify-content: center; align-content: center; flex-wrap: wrap;
+	margin: 0 auto;
+}
+
+.ftr-bx {
+	width: auto;
+	height: 90px;
+	display: flex; justify-content: center; align-content: center; flex-wrap: wrap; align-items: center;
+}
+.ftr-bx-txt {
+	z-index: 2;
+	margin-left: 22px;
+	font-family: 'Gotham Pro Bold'; font-size: 31.87px; color: white;
+}
